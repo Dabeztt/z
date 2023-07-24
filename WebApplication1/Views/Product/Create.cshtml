@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model ProductVM
+
+<h1>Create product</h1>
+
+<form method="post" asp-action="Create" asp-controller="Product">
+    
+    <div class="form-group">
+        <label >Product name: </label>
+        <input asp-for="ProductName" class="form-control" />
+        <span asp-validation-for="ProductName" class="text-danger small"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
